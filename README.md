@@ -55,7 +55,6 @@ npm run test         # Run tests
 npm run test:watch   # Watch mode
 npm run test:cov     # Test coverage
 npm run test:debug   # Debug mode
-npm run test:e2e     # E2E tests
 ```
 
 ## 🧪 Testing
