@@ -19,7 +19,7 @@ A calculator API built with NestJS that evaluates mathematical expressions.
 
 1. Clone the repository
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/hmujicadev/nexton-calculator
 ```
 
 2. Install dependencies
@@ -120,6 +120,6 @@ This project is [UNLICENSED]
 
 ## 👥 Author
 
-[Hector Mujica]
+Hector Mujica
 - [linkedin](https://www.linkedin.com/in/hmujicadev/)
 ---
