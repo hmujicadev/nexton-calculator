@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="./images/favicon.ico" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator__wrapper">
+      <div class="calculator__social-media--wrapper">
+        <a
+          href="https://www.linkedin.com/in/hmujicadev/"
+          target="_blank"
+          class="calculator__social-media--link"
+        >
+          <img
+            src="./images/linkedin.svg"
+            class="calculator__social-media--icon"
+            width="130px"
+            alt="LinkedIn Icon"
+          />
+        </a>
+        <a
+          href="https://github.com/hmujicadev"
+          target="_blank"
+          class="calculator__social-media--link"
+        >
+          <img
+            src="./images/github.svg"
+            class="calculator__social-media--icon"
+            width="130px"
+            alt="LinkedIn Icon"
+          />
+        </a>
+      </div>
+
+      <div class="calculator">
+        <img
+          src="./images/nexton-logo.svg"
+          class="nexton__logo"
+          alt="Nexton Logo"
+        />
+        <input type="text" id="visor" class="visor" value="0" />
+        <button onclick="limpiar()">C</button>
+        <button onclick="agregar('(')">(</button>
+        <button onclick="agregar(')')">)</button>
+        <button onclick="borrar()">←</button>
+        <button onclick="agregar('7')">7</button>
+        <button onclick="agregar('8')">8</button>
+        <button onclick="agregar('9')">9</button>
+        <button onclick="agregar('/')">÷</button>
+        <button onclick="agregar('4')">4</button>
+        <button onclick="agregar('5')">5</button>
+        <button onclick="agregar('6')">6</button>
+        <button onclick="agregar('*')">×</button>
+        <button onclick="agregar('1')">1</button>
+        <button onclick="agregar('2')">2</button>
+        <button onclick="agregar('3')">3</button>
+        <button onclick="agregar('-')">-</button>
+        <button onclick="agregar('0')">0</button>
+        <button onclick="agregar('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="agregar('+')">+</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
