@@ -3,6 +3,10 @@ let operacion = '0';
 
 const caracteresPermitidos = /^[0-9+\-*/().]*$/;
 
+
+function removeLeadingZeros(expression) {
+  return expression.replace(/(?<=^|[+\-*(])0+(?=\d)/g, '');
+}
 const actualizarVisor = () => (visor.value = operacion || '0');
 
 const agregar = (valor) => {
@@ -29,7 +33,7 @@ const calcular = async () => {
     const response = await fetch('/api/calculate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ expression: operacion }),
+      body: JSON.stringify({ expression: removeLeadingZeros(operacion) }),
     });
     const { result } = await response.json();
     operacion = result || 'Error';
